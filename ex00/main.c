@@ -1,9 +1,6 @@
 #include "ft_putchar.h"
 
-int main(int argc, char *argv[])
+int main(void)
 {
-	if(argc == 2)
-	{
-		ft_putchar(argv[1][0]);
-	}
+	ft_putchar('k');
 }

@@ -1,9 +1,6 @@
 #include "ft_print_alphabet.h"
 
-int main(int argc, char *argv[])
+int main(void)
 {
-	if(argc == 1)
-	{
-		ft_print_alphabet();
-	}
+	ft_print_alphabet();
 }

@@ -1,9 +1,6 @@
 #include "ft_is_negative.h"
 
-int main(int argc, char *argv[])
+int main(void)
 {
-	if(argc == 1)
-	{
-		ft_is_negative(-42);
-	}
+	ft_is_negative(-42);
 }
