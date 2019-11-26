@@ -6,7 +6,7 @@
 /*   By: ecerquei <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/21 21:09:30 by ecerquei          #+#    #+#             */
-/*   Updated: 2019/11/21 21:13:12 by ecerquei         ###   ########.fr       */
+/*   Updated: 2019/11/26 08:21:20 by ecerquei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void print_char(char character);
 
 void	ft_print_comb2(void)
 {
-	print_numbers(0, 0);
+	print_numbers(0, 1);
 }
 
 void	print_numbers(int first, int second)
@@ -42,16 +42,8 @@ void	print_numbers(int first, int second)
 
 void	print_int(int integer)
 {
-	if (integer >= 10)
-	{
-		print_char('0' + integer / 10);
-		print_char('0' + integer % 10);
-	}
-	else if (integer >= 0)
-	{
-		write(1, "0", 1);
-		print_char('0' + integer);
-	}
+	print_char('0' + integer / 10);
+	print_char('0' + integer % 10);
 }
 
 void	print_char(char character)
