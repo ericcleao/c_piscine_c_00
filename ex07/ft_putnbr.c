@@ -6,7 +6,7 @@
 /*   By: ecerquei <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/21 21:11:23 by ecerquei          #+#    #+#             */
-/*   Updated: 2019/11/26 14:14:59 by ecerquei         ###   ########.fr       */
+/*   Updated: 2019/11/27 10:04:49 by ecerquei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,15 @@ void	ft_putnbr(int nb)
 	{
 		ft_putnbr(nb / 10);
 	}
-	else if (nb < 0)
+	else if (nb < -9)
 	{
 		print_char('-');
 		ft_putnbr((nb / 10) * -1);
+		current_digit = '0' + ((nb % 10) * -1);
+	}
+	else if (nb < 0)
+	{
+		print_char('-');
 		current_digit = '0' + ((nb % 10) * -1);
 	}
 	print_char(current_digit);
